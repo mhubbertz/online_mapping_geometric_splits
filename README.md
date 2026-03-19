@@ -74,15 +74,19 @@ The repository is organized into three main components:
 ---
 
 
-### O_loc Validation Sets (Original Split Only)
+### O_loc Validation Sets
 
-| Dataset     | Split | Close (s(v) aligned) | Far (s(v) aligned) |
+| Dataset     | Split | Close samples (s(v) aligned) | Far samples (s(v) aligned) |
 |-------------|-------|-----------------|---------------|
 | Argoverse 2 | original | 4,699           | 4,699         |
 | nuScenes    | original | 1,236           | 1,236         |
 
 
 ### O_geom Validation Sets
+
+n: number of samples
+
+s<sub>i</sub>: average s(v) per bin
 
 <table>
   <thead>
@@ -164,9 +168,9 @@ The repository is organized into three main components:
 
 ### Geometric Splits
 
-| Dataset     | Train   | Val    | Test   |
+| Dataset     | Train samples   | Val samples    | Test samples  |
 |------------|--------|--------|--------|
-| Argoverse2 | 107,449 | 26,404 | 22,183 |
+| Argoverse 2 | 107,449 | 26,404 | 22,183 |
 | nuScenes   | 27,326  | 5,942  | 6,889  |
 
 

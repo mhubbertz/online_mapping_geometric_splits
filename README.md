@@ -1,3 +1,15 @@
+<div align="center">
+<h2>Failure Modes for Deep Learning–Based Online Mapping: How to Measure and Address Them</h2> 
+<h4>CVPR 2026</h4>
+</div>
+<!-- <p align="center"> -->
+    <!-- doc badges -->
+    <!-- <a href="https://arxiv.org/abs/2505.10258"> -->
+        <!-- <img src='https://img.shields.io/badge/arXiv-Page-aff'> -->
+    <!-- </a> -->
+<!-- </p> -->
+
+
 ## Overview
 
 This repository accompanies the paper  
@@ -15,7 +27,7 @@ To this end, we provide the sample token lists for the following parts of the pa
 
 The **O_loc evaluation** measures how much a model relies on **geographic proximity** to training data.
 
-- Based on a distance threshold $T_\text{dist}$ (here 5 m, following [Localization Is All You Evaluate by Lilja et al.](https://github.com/LiljaAdam/geographical-splits)), validation data is split into:
+- Based on a distance threshold $T_\text{dist}$ (here 5 m, following [previous work](https://arxiv.org/abs/2312.06420)), validation data is split into:
   - **Close** (geographically near training samples)
   - **Far** (geographically distant)
 - Geometric similarity distributions between **close** and **far** subsets are **aligned** to isolate localization effects and avoid confounding with geometric differences
@@ -66,6 +78,8 @@ These splits are useful when testing whether a model can handle **previously uns
 
 ---
 
+We denote the geographical splits introduced by [Localization Is All You Evaluate: Data Leakage in Online Mapping Datasets and How to Fix It by Lilja et al.](https://arxiv.org/abs/2312.06420) and [StreamMapNet: Streaming Mapping Network for Vectorized Online HD Map Construction by Yuan et al.](https://arxiv.org/abs/2308.12570) as geo_split_local and geo_split_stream, respectively.
+
 The repository is organized into three main components:
 1. **O_loc validation sets** (localization-based evaluation)
 2. **O_geom validation sets** (geometry-based evaluation bins)
@@ -78,7 +92,7 @@ The repository is organized into three main components:
 
 | Dataset     | Split | Close samples (s(v) aligned) | Far samples (s(v) aligned) |
 |-------------|-------|-----------------|---------------|
-| Argoverse 2 | original | 4,699           | 4,699         |
+| Argoverse&nbsp;2 | original | 4,699           | 4,699         |
 | nuScenes    | original | 1,236           | 1,236         |
 
 
@@ -109,7 +123,7 @@ s<sub>i</sub>: average s(v) per bin
   </thead>
   <tbody>
     <tr>
-      <td>Argoverse 2</td>
+      <td>Argoverse&nbsp;2</td>
       <td>geo_local</td>
       <td>5,653</td><td>3.29</td>
       <td>9,010</td><td>8.59</td>
@@ -118,7 +132,7 @@ s<sub>i</sub>: average s(v) per bin
       <td>226</td><td>24.50</td>
     </tr>
     <tr>
-      <td>Argoverse 2</td>
+      <td>Argoverse&nbsp;2</td>
       <td>geo_stream</td>
       <td>7,090</td><td>3.27</td>
       <td>10,951</td><td>8.81</td>
@@ -127,7 +141,7 @@ s<sub>i</sub>: average s(v) per bin
       <td>21</td><td>25.42</td>
     </tr>
     <tr>
-      <td>Argoverse 2</td>
+      <td>Argoverse&nbsp;2</td>
       <td>original</td>
       <td>3,011</td><td>3.59</td>
       <td>5,008</td><td>8.43</td>
@@ -170,13 +184,13 @@ s<sub>i</sub>: average s(v) per bin
 
 | Dataset     | Train samples   | Val samples    | Test samples  |
 |------------|--------|--------|--------|
-| Argoverse 2 | 107,449 | 26,404 | 22,183 |
+| Argoverse&nbsp;2 | 107,449 | 26,404 | 22,183 |
 | nuScenes   | 27,326  | 5,942  | 6,889  |
 
 
 ---
 
-We provide the sample tokens for all nuScenes/Argoverse 2 splits mentioned in the paper. Each `.txt` file contains newline-separated sample tokens.
+We provide the sample tokens for all nuScenes/Argoverse&nbsp;2 splits mentioned in the paper. Each `.txt` file contains newline-separated sample tokens.
 
 ### Directory Tree
 

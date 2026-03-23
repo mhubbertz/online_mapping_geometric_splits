@@ -2,12 +2,12 @@
 <h2>Failure Modes for Deep Learning–Based Online Mapping: How to Measure and Address Them</h2> 
 <h4>CVPR 2026</h4>
 </div>
-<!-- <p align="center"> -->
+<p align="center">
     <!-- doc badges -->
-    <!-- <a href="https://arxiv.org/abs/2505.10258"> -->
-        <!-- <img src='https://img.shields.io/badge/arXiv-Page-aff'> -->
-    <!-- </a> -->
-<!-- </p> -->
+    <a href="https://arxiv.org/abs/2603.19852v1">
+        <img src='https://img.shields.io/badge/arXiv-Page-aff'>
+    </a>
+</p>
 
 
 ## Overview
